@@ -2,11 +2,8 @@
 console.log("-----4st task-----");
 
 const getTotalBalanceByGender = (users, gender) =>
-    users = clients
-        .filter(client => client.gender === gender)
-        .reduce((acc, el) => {
-            return acc + el.balance;
-        }, 0);
+    users.filter(item => item.gender === gender)
+        .reduce((acc, el) => (acc += el.balance), 0);
 
 
 
